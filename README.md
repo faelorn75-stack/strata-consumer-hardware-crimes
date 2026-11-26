@@ -30,7 +30,7 @@ The current Linux tune alone has **3,055 measured engine requests** and **2.11 m
 The repo has the cleaned-up audit and ledgers so you do not have to excavate the mess yourself:
 
 - `AUDIT_REPORT.md` — reconstructed tune history, what changed, controlled evidence, production aggregates, and the stuff we could not prove.
-- `data/request_ledger_final.csv` — all 8,833 deduplicated primary engine request records with provenance.
+- `data/request_ledger_parts/` — all 8,833 deduplicated primary engine request records with provenance, split into nine row-range CSVs for upload.
 - `data/chronological_tune_totals.csv` — the tune-by-tune rollup.
 
 The full evidence archive is **422 MB / 13,669 files**, hash-checked and CRC-tested before upload. It includes the raw Windows and Linux logs, old configs, systemd journal, controlled tuning workspaces, hardware/runtime proof, and the original manifest. Giant per-token routing traces, model weights, binaries, session DBs, credentials, and personal stuff were deliberately left out.
